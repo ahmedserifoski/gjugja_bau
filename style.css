@@ -612,15 +612,65 @@ header {
     opacity: .9;
 }
 
+/* 
+POSSIBLE SEPARAT PROJEKTE CSS
+*/
+
+
+.individual-project {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+    
+    @media (max-width: 860px) {
+        .model-images {
+            margin: 0 auto 2em auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+          } 
+          
+          .model-images--image {
+              width: 90%;
+              margin: 1em auto 1em auto;
+            }
+            .portfolio-item-individual {
+                width: 80%;
+            }
+    }
+    .model-images {
+        margin: 0 auto 2em auto;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        justify-content: center;
+        /* text-align: center; */
+        width: 100%;
+        max-width: 1200px;
+      } 
+      .model-images--image {
+              /* width: 90%; */
+              margin: 0 0 0 1em;
+            }
+      .portfolio-item-individual {
+        margin: 0 1em 0 2em;
+    }
+
 /* Footer ------------------------------------------------------------------------------------------------------------------------- */
 
 .footer {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1.5em 0;
     font-size: var(--fs-h3);
-
+    margin-top: auto;
 }
 
 .footer a { 
