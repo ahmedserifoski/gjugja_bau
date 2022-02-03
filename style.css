@@ -562,18 +562,24 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
-    
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url("Images/ben-allan-BIeC4YK2MTA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-attachment:fixed;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    
 }
-
 
 .portfolio__item {
     background: var(--clr-accent);
@@ -617,36 +623,18 @@ POSSIBLE SEPARAT PROJEKTE CSS
 */
 
 
-.individual-project {
+.individual-site {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     
 }
     
-    @media (max-width: 860px) {
-        .model-images {
-            margin: 0 auto 2em auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 100%;
-            max-width: 1200px;
-          } 
-          
-          .model-images--image {
-              width: 90%;
-              margin: 1em auto 1em auto;
-            }
-            .portfolio-item-individual {
-                width: 80%;
-            }
-    }
-    .model-images {
+    
+    .individual-div {
         margin: 0 auto 2em auto;
         display: flex;
+        flex-direction: column;
         /* flex-wrap: wrap; */
         /* align-items: center; */
         justify-content: center;
@@ -654,18 +642,60 @@ POSSIBLE SEPARAT PROJEKTE CSS
         width: 100%;
         max-width: 1200px;
       } 
-      .model-images--image {
-              /* width: 90%; */
-              margin: 0 0 0 1em;
+      .individual-div--image {
+              width: 50%;
+              margin: 3em auto 0 auto;
             }
-      .portfolio-item-individual {
-        margin: 0 1em 0 2em;
+      .individual-div-context {
+        margin: 2em 1em 0 2em;
+    }
+
+    .individual-div-context p{
+        margin-top: 1em;
+    }
+
+    .individual-div-context h3 {
+        margin-top: 1em;
+    }
+
+    @media (max-width: 860px) {
+        .individual-div {
+            margin: 0 auto 2em auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            /* text-align: center; */
+            width: 100%;
+            max-width: 1200px;
+          } 
+          
+          .individual-div--image {
+              width: 80%;
+              margin: 1em auto 1em auto;
+            }
+            .individual-div-context {
+                width: 80%;
+            }
+    }
+
+    /* ueber uns */
+
+    
+
+    .ueber-uns h2 {
+        text-align: center;
+    }
+
+    .ueber-uns p{
+        margin: auto;
+        width: 90%;
     }
 
 /* Footer ------------------------------------------------------------------------------------------------------------------------- */
 
 .footer {
-    background: #111;
+    background: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
     padding: 1.5em 0;
