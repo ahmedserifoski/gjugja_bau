@@ -15,7 +15,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Images/firmenlogo.png"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Gjugja Bau GmbH</title>
 </head>
 <body>
@@ -32,9 +32,10 @@
             <!--BEM System, double underscore-->
             <ul class="nav__list">
                 <li class="nav__item"><a  href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a  href="#leistungen" class="nav__link">Dienstleistung</a></li>
-                <li class="nav__item"><a  href="#team" class="nav__link">Team</a></li>
-                <li class="nav__item"><a  href="#work" class="nav__link">Projekte</a></li>
+                <li class="nav__item"><a href="../index.html#leistungen" class="nav__link">Dienstleistungen</a></li>
+                <!-- <li class="nav__item"><a  href="#team" class="nav__link">Team</a></li> -->
+                <li class="nav__item"><a  href="#ueber-uns" class="nav__link">Über uns</a></li>
+                <li class="nav__item"><a  href="#work" class="nav__link">Referenzen</a></li>
                 <li class="nav__item"><a  href="#kontakt" class="nav__link">Kontakt</a></li>
             </ul>
         </nav>
@@ -58,25 +59,25 @@
         <div class="sub-leistungen row">
             <div class="card col-sm-4 mb-4"  style="width: 14rem;">
                 <div class="card h-100">
-                    <img src="Images/orkhan-farmanli-OgNG87hmESc-unsplash.jpg" class=" card-img-top" alt="...">
+                    <img src="Images/hoch.png" class=" card-img-top" alt="...">
                     <h5 class="card-title font-weight-bold mt-3">Hochbau</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Unsere Kompetenz und Erfahrung in der Baubranche ist Ihr Garant, dass Ihre Projekte ohne Sorgenfalten über die Bühne gebracht werden. Wir realisieren jedes neue Bauwerk mit viel Detailarbeit zum Erfolg.</p>
                 </div>
                 
             </div>
             <div class="card col-sm-4 mb-4"  style="width: 14rem;">
                 <div class="card h-100">
-                    <img src="Images/logan-weaver-L3xzKp78nQ0-unsplash.jpg" class=" card-img-top" alt="...">
-                    <h5 class="card-title font-weight-bold mt-3">Tiefbau</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="Images/roh.png" class=" card-img-top" alt="...">
+                    <h5 class="card-title font-weight-bold mt-3">Schal- und Betonbarbeit</h5>
+                    <p class="card-text">Betonarbeiten brauchen eine solide Schalung damit der Beton schneller verarbeitet werden kann und damit sicherer Beton kreiert werden kann. Mit uns an Ihrer Seite sind Sie stets auf der sicheren Seite.</p>
                 </div>
                 
             </div>
             <div class="card col-sm-4 mb-4"  style="width: 14rem;">
                 <div class="card h-100">
-                    <img src="Images/alvin-balemesa-yn3tA00iHBg-unsplash.jpg" class=" card-img-top" alt="...">
-                    <h5 class="card-title font-weight-bold mt-3">Umbau</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="Images/schal.png" class=" card-img-top" alt="...">
+                    <h5 class="card-title font-weight-bold mt-3">Roh- und Betonbau</h5>
+                    <p class="card-text">Beim Rohbau werden die Weichen für ein sicheres Wohnen gestellt. Mit sorgfältiger Planung erreichen wir eine fachgerechte Wärme- und Schalldämmung der Wände damit Gebäude bewohnbar sind.</p>
                 </div>
                 
             </div>
@@ -92,14 +93,15 @@
                 <img class="card-img-top  img-fluid w-50 h-50 mt-4" src="Images/engineer.png" alt="Card image cap">
                     <div class="card-body">
                         <h3 class="card-title font-weight-bold">Plannung</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>            </div>
+                        <p class="card-text">Mit unserer Erfahrung planen wir so, dass die Arbeit so nahtlos und schnell wie möglich verläuft</p>            
+                    </div>
                 </div>
         
                 <div class="card little-icons mb-4" style="width: 14rem;">
                     <img class="card-img-top  img-fluid w-50 h-50 mt-4 " src="Images/compass.png" alt="Card image cap">
                     <div class="card-body">
                         <h3 class="card-title font-weight-bold">Strategie</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Gemeinsam mit Kunden entwickeln wir die bestmögliche Strategie für jedes einzelne Projekt</p>
                     </div>
                 </div>
         
@@ -107,14 +109,15 @@
                     <img class="card-img-top  img-fluid w-50 h-50 mt-4 " src="Images/helmet.png" alt="Card image cap">
                     <div class="card-body">
                         <h3 class="card-title font-weight-bold">Sicherheit</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>            </div>
+                        <p class="card-text">Es wird immer Berücksichtingt, dass die Sicherheit immer an erster Stelle steht, bevor die Arbeit  beginnt</p>            
+                    </div>
                 </div>
         </div>
         
     </section>
 
 <!--Team -->
-    <section class="team" id="team">
+    <!-- <section class="team" id="team">
         <h2 class="section__title section__title--about">Team</h2>
         
         <div class="card shadow-none" style="max-width: 1200px">
@@ -163,11 +166,32 @@
           </div>
         </div>
         
+    </section> -->
+
+    <!--ueber uns-->
+
+    <section class="ueber-uns" id="ueber-uns">
+        <h2>Über uns</h2>
+        <br>
+        <p>Die Gjugja BAU GmbH ist spezialisiert auf Schalungen aller Art, für EFH, MFH & Industriegebäude. 
+            ROHBAU - BETON - HOCHBAU
+            </p>
+            <br>
+            <p>Als kleines Unternehmen erledigen wir Kundenarbeiten, realisieren aber auch Grossbauten.</p>
+            <br>
+            <p>Auch wenn es nur ein kleines Projekt sein muss, bemühen wir uns um grosse Zuverlässigkeit und Qualität. </p>
+            <br>
+            <p>Unter Kundenservice verstehen wir nicht nur Detailarbeiten, gerne beraten wir Sie auch mit unserem Fachwissen.</p>
+            <br>
+            <p>Bei grossen Projekten kommt vor allem unser eingespieltes Team zum Tragen. Wir harmonisieren in allen Bereichen miteinander und sorgen für einen reibungslosen Ablauf des Baus.
+            Unsere Expertise in der Betonarbeit und unsere langjährige Erfahrung im Rohbau sowie Hochbau gibt Ihnen die Sicherheit sich auf weiteres zu konzentrieren, während wir dafür sorgen, dass Wand und Boden den heutigen hohen Erwartungen entsprechen
+            </p>
+        
     </section>
 
     <!--   My Work-->
     <section class="my-work mt-0" id="work">
-        <h2 class="my-work__title section__title--work">Projekte</h2>
+        <h2 class="my-work__title section__title--work">Referenzen</h2>
         <p class="section__subtitle section__subtitle--work">Eine Auswahl unserer Arbeitsweise</p>
 
         <div class="portfolio">
@@ -195,33 +219,7 @@
             <a href="Projekte/projekt6.html" class="portolio__item">
                 <img src="Images/ALBISPARK-3.jpg" alt="" class="portfolio__img"/>
             </a>
-
-
-
-
-            
         </div>
-    </section>
-
-    <!--ueber uns-->
-
-    <section class="ueber-uns">
-        <h2>Über uns</h2>
-        <br>
-        <p>Die Gjugja BAU GmbH ist spezialisiert auf Schalungen aller Art, für EFH, MFH & Industriegebäude. 
-            ROHBAU - BETON - HOCHBAU
-            </p>
-            <br>
-            <p>Als kleines Unternehmen erledigen wir Kundenarbeiten, realisieren aber auch Grossbauten.</p>
-            <br>
-            <p>Auch wenn es nur ein kleines Projekt sein muss, bemühen wir uns um grosse Zuverlässigkeit und Qualität. </p>
-            <br>
-            <p>Unter Kundenservice verstehen wir nicht nur Detailarbeiten, gerne beraten wir Sie auch mit unserem Fachwissen.</p>
-            <br>
-            <p>Bei grossen Projekten kommt vor allem unser eingespieltes Team zum Tragen. Wir harmonisieren in allen Bereichen miteinander und sorgen für einen reibungslosen Ablauf des Baus.
-            Unsere Expertise in der Betonarbeit und unsere langjährige Erfahrung im Rohbau sowie Hochbau gibt Ihnen die Sicherheit sich auf weiteres zu konzentrieren, während wir dafür sorgen, dass Wand und Boden den heutigen hohen Erwartungen entsprechen
-            </p>
-        
     </section>
     
     <!--   Footer   -->
@@ -231,7 +229,6 @@
             <p><a href="mailto:info@gjugja-bau.ch" class="footer__link">info@gjugja-bau.ch</a></p>
             <p class="footer__link">Heimstrasse 16b</p>
             <p class="footer__link">8953 Dietikon</p>
-            <p class="footer__link">Telefon 044 124 45 67</p>
             <p class="footer__link">Mobil 078 345 41 48</p>
         </ul>
     </footer>
